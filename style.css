@@ -26,6 +26,7 @@ p{
 }
 .Beans{
     border: 3px solid black;
+    border-radius: 20px;
 }
 h3{
     background-color: burlywood;
@@ -40,6 +41,7 @@ div{
 .Beans2{
     border: 3px solid black;
     border-style: groove;
+    border-radius: 20px;
 }
 .Pricing{
     display: flex;
@@ -54,5 +56,9 @@ body{
 }
 footer{
     margin: 50px;
-
+    }
+#Checkout{
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
 }

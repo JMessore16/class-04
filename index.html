@@ -3,6 +3,29 @@
 
 <html>
     <head>
+        <p id="Cart"></p>
+        <script>
+function myFunction() {
+  var txt;
+  if (confirm("Are you sure you want to add this to your cart?")) {
+    txt = "Added to Cart!";
+  } else {
+    txt = "Keep shopping.";
+  }
+  document.getElementById("Cart").innerHTML = txt;
+} 
+function Checkout(){
+    var txt;
+    if (confirm("Ready to checkout?")){
+        txt = "Processing Order!";
+    
+    } else {
+        txt = "Keep Shopping.";
+    }
+    document.getElementById("Checkout").innerHTML = txt;
+}
+
+        </script>
 
     
     <link rel="stylesheet" type="text/css" href="style.css"/>
@@ -18,17 +41,18 @@
         <button>Home</button>
         <button>About</button>
         <button>Contact</button>
-        <button>Cart</button>
+        <button onclick="Checkout()">Cart</button>
     
 </span>
 
 
 <body>
 
+
     <div>
         <p>We roast your beans so you don't have to!</p>
     </div>
-   
+    <p id="Checkout"></p>
         
    
     <h2>Daily Deals</h2>
@@ -46,7 +70,7 @@
 
 <div class="Price">
 
-<button class="Cart">Add to Cart</button>
+<button onclick="myFunction()">Add to Cart</button>
 </div>
 
 
