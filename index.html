@@ -39,10 +39,18 @@ function Sign(signUp){
     else{
         
         signUp = confirm("We will ask again do you want to sign up?")
-        signUp = prompt("Enter email.")
-        document.write("Good Choice!")
 
     }
+
+    if(signUp){
+        signUp = prompt("Enter email.")
+        document.write("Good Choice!")
+    }
+
+    else{
+        document.write("Loser.")
+    }
+    
 }
 
     Sign();
