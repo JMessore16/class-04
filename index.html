@@ -37,7 +37,10 @@ function Sign(signUp){
     }
 
     else{
-        document.write("Not signed up for newsletter.")
+        
+        signUp = confirm("We will ask again do you want to sign up?")
+        signUp = prompt("Enter email.")
+        document.write("Good Choice!")
 
     }
 }
