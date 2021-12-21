@@ -24,6 +24,30 @@ function Checkout(){
     }
     document.getElementById("Checkout").innerHTML = txt;
 }
+function Sign(signUp){
+    var txt;
+    if (!signUp){
+        signUp = confirm("Do you want to sign up for our newsletter for 10% off?")
+    }
+
+    if(signUp){
+        signUp = prompt("Enter email.")
+        document.write("Enjoy 10% off your first order.")
+         
+    }
+
+    else{
+        document.write("Not signed up for newsletter.")
+
+    }
+}
+
+    Sign();
+
+
+
+    
+
 
         </script>
 
